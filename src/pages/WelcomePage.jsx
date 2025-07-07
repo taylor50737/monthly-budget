@@ -22,7 +22,6 @@ export default function WelcomePage() {
           <br />
           Spend Wiser ...
         </h2>
-        {/* You can also add an illustration here if available */}
       </div>
 
       <div className="welcome-right">

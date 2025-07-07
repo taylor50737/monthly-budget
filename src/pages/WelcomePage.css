@@ -6,7 +6,6 @@
   font-family: sans-serif;
 }
 
-/* Optional: left column for illustration */
 .welcome-left {
   flex: 1;
   background-color: #f9f7e8;
