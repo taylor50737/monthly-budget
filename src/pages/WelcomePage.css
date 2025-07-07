@@ -1,0 +1,92 @@
+.welcome-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Optional: left column for illustration */
+.welcome-left {
+  flex: 1;
+  background-color: #f9f7e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.welcome-left h2 {
+  font-size: 1.5rem;
+  color: #111;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.welcome-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.welcome-form {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.welcome-form h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-form h1 span {
+  color: #00c37a;
+}
+
+.welcome-form input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 0.75rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.welcome-form input::placeholder {
+  color: #aaa;
+}
+
+.welcome-form button {
+  background-color: #ffd500;
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .welcome-page {
+    flex-direction: column;
+  }
+
+  .welcome-left,
+  .welcome-right {
+    flex: unset;
+    width: 100%;
+  }
+
+  .welcome-left {
+    padding: 1rem;
+  }
+
+  .welcome-form {
+    max-width: 90%;
+  }
+}
